@@ -17,7 +17,7 @@ $ pip install kakaotrans
 >>> translator = Translator()
 >>> translator.translate("Try your best rather than be the best.")
 # '최고가 되기보다는 최선을 다하라.'
->>> translator.translate("최고가 되기보다는 최선을 다하라.", source='kr', target='de')
+>>> translator.translate("최고가 되기보다는 최선을 다하라.", src='kr', tgt='de')
 # 'Tun Sie Ihr Bestes, anstatt das Beste zu sein.'
 ```
 
@@ -32,7 +32,7 @@ translator = Translator()
 
 translator.translate("""지난해 3월 오픈한 카카오톡 주문하기는 현재까지 약 250만명의 회원을 확보했다.
             전 국민에게 친숙한 카카오톡 UI를 활용하기 때문에 별도의 앱을 설치할 필요 없이 카카오톡 내에서 모든 과정이 이뤄지는 것이 특징이다.""",
-            source='kr', target='en', separate_lines=True)
+            src='kr', tgt='en', separate_lines=True)
 # ['The ordering of KakaoTalk, which opened in March last year, has secured about 2.5 million members to date.', 'Because it uses KakaoTalk UI, which is familiar to the whole nation, it is characterized by all the processes in KakaoTalk without having to install a separate app.']
 ```
 

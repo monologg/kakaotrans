@@ -28,16 +28,16 @@ class Translator(object):
             "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7,la;q=0.6"
         }
 
-    def translate(self, query, source='en', target='kr', separate_lines=False,
+    def translate(self, query, src='en', tgt='kr', separate_lines=False,
                   save_as_file=False, file_name=None):
         """
         Translate text from source language to target langauge
 
         :param query: The source text to be translated
 
-        :param source: Source language. You can set as 'auto' for auto detecting the source language.
+        :param src: Source language. You can set as 'auto' for auto detecting the source language.
 
-        :param target: Target Language
+        :param tgt: Target Language
 
         :param separate_lines: If this is set as True, this function will return the list of translated sentences
 
@@ -60,17 +60,17 @@ class Translator(object):
         query = ' '.join(query.strip().split())
 
         # Assert language code
-        if source != 'auto' and source not in LANGUAGES:
+        if src != 'auto' and src not in LANGUAGES:
             raise ValueError('Invalid source language')
-        if target not in LANGUAGES:
+        if tgt not in LANGUAGES:
             raise ValueError('Invalid target language')
-        if source == target:
-            raise ValueError("Source language and Target Language cannot be same")
+        if src == tgt:
+            raise ValueError("Source language and Target language cannot be same")
 
         # Send the POST request
         params = {
-            'queryLanguage': source,
-            'resultLanguage': target,
+            'queryLanguage': src,
+            'resultLanguage': tgt,
             'q': query
         }
         response = requests.post(self.service_url, headers=self.headers, data=params)

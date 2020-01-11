@@ -1,5 +1,9 @@
 # Kakaotrans
 
+[![Release](https://img.shields.io/badge/release-v0.1.2-green)](https://pypi.org/project/kakaotrans/)
+[![Downloads](https://pepy.tech/badge/kakaotrans)](https://pepy.tech/project/kakaotrans)
+[![license](https://img.shields.io/badge/license-Apache%202.0-red)](https://github.com/monologg/kakaotrans/blob/master/LICENSE)
+
 Unofficial python API for [Kakao translate service](https://translate.kakao.com).
 
 ## Installation

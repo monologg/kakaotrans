@@ -27,7 +27,7 @@ $ pip install kakaotrans
 
 ### Separate the query into multiple sentences
 
-Translation query might include multiple sentences. If you set separate_lines=True, translator will automatically separate the query and return the list of multiple sentences.
+Translation query might include multiple sentences. If you set `separate_lines=True`, translator will automatically separate the query and return the list of multiple sentences.
 
 ```python
 from kakaotrans import Translator

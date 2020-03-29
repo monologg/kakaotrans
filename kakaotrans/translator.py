@@ -34,17 +34,11 @@ class Translator(object):
         Translate text from source language to target langauge
 
         :param query: The source text to be translated
-
         :param src: Source language. You can set as 'auto' for auto detecting the source language.
-
         :param tgt: Target Language
-
         :param separate_lines: If this is set as True, this function will return the list of translated sentences
-
         :param save_as_file: Whether save the translated result as file or not
-
         :param file_name: File name for saving the result. 
-
         :return: Translated Text
                  If separate_line==False, return the translated result in one sentence
                  If separate_line==True, return the list of multiple translated sentences
